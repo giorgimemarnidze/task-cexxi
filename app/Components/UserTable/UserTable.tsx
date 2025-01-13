@@ -8,7 +8,7 @@ interface User {
   age: number;
 }
 
-interface UserTableProps {
+interface PropsTable {
   users: User[];
   onEditUser: (user: User) => void;
   onDeleteUser: (id: number) => void;
@@ -16,7 +16,7 @@ interface UserTableProps {
   onPageChange: (page: number) => void;
 }
 
-const UserTable: React.FC<UserTableProps> = ({
+const UserTable: React.FC<PropsTable> = ({
   users,
   onEditUser,
   onDeleteUser,
